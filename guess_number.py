@@ -8,11 +8,9 @@ while True:
     guess = int(input('Введите число: '))
 
     if guess < correct_number:
-        print(f'Загаданное число больше чем {guess}')
-    
-    if guess > correct_number:
+        print(f'Загаданное число больше чем {guess}')    
+    elif guess > correct_number:
         print(f'Загаданное число меньше чем {guess}')
-
-    if guess == correct_number:
+    elif guess == correct_number:
         print(f'Вы угадали! Число было {correct_number}')
         break
